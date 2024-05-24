@@ -1,0 +1,6 @@
+[changelog]
+template = "remote"
+remote = "github.com"
+repository = "rust_columns"
+owner = "rendez"
+authors = [{ signature = "Luis Merino", username = "rendez" }]

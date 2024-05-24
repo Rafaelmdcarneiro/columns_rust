@@ -1,0 +1,21 @@
+[package]
+name = "rust_columns"
+version = "0.1.1"
+authors = [ "Luis Merino <mail@luismerino.name> "]
+edition = "2021"
+description = "Open source terminal arcade game with audio - based off of the classic Sega 'Columns'"
+homepage = "https://github.com/Rendez/rust_columns"
+repository = "https://github.com/Rendez/rust_columns/tree/main/rust_columns"
+readme = "README.md"
+keywords = [ "terminal", "game" ]
+categories = [ "games", "command-line-utilities" ]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+crossterm = "0.26.0"
+rand = "0.8.5"
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
+lto = true
+panic = "abort"
